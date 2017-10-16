@@ -1,8 +1,9 @@
 import json
+import pprint as pp
 
 
 def load_data(filepath):
-    pass
+    return open(filepath,'r')
 
 
 def pretty_print_json(data):
@@ -10,4 +11,5 @@ def pretty_print_json(data):
 
 
 if __name__ == '__main__':
-    pass
+    f = load_data('test.json')
+    pp.pprint(f.read())
